@@ -3,7 +3,7 @@
 //Object.create=> esko hi bolte hi constructor ke object bnana
 
 
-//object literals
+//+++++++++++++++++++++++++++++object literals+++++++++++++++++++++++++++++++++++++
 
 const sym= Symbol("key1");
 
