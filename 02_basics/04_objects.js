@@ -142,22 +142,22 @@ const users =[
 
 //console.log(users[0].emil);//shdjhj@gmail.com
 
-console.log(tinderUser);
+//console.log(tinderUser);
 
-console.log(Object.keys(tinderUser));
+//console.log(Object.keys(tinderUser));
 /*
 Object.Keys() return all keys of object in an array
 [ 'id', 'name', 'isLoggedIn' ]
 */
 
-console.log(Object.values(tinderUser));
+//console.log(Object.values(tinderUser));
 /*
 Object.values() return all values of object in an array
 [ '123abs', 'Ashish', false ]
 */
 
 
-console.log(Object.entries(tinderUser));
+//console.log(Object.entries(tinderUser));
 
 /*
 Object.entries() return all individual entries yani har key value pair ko alag alag arry me kar deta hi yani array ke andar array.
@@ -170,9 +170,52 @@ output=>true
 .hasOwnProperty(property name) if property name is exist then return true otherwise return false. 
 */
 
-console.log(tinderUser.hasOwnProperty('isLogged'));
+//console.log(tinderUser.hasOwnProperty('isLogged'));
 /*
 output=>false
 .hasOwnProperty(property name) if property name is exist then return true otherwise return false. 
 */
 
+
+//++++++++++++++++ destructring of Object+++++++++++++++++++++++++++++++++++
+
+const course = {
+    CourseName:"js programming",
+    price: "999",
+    courseInstructor:"Ashish"
+
+}
+
+//course.courseInstructor
+
+const {courseInstructor} = course
+//now we can only use courseInstructor to print
+
+console.log(courseInstructor);//Ashish 
+
+const {courseInstructor:instructor} = course
+//now we can only use instructor to print value of courseInstructor
+
+console.log(instructor);//Ashish
+
+
+//++++++++++++++++++++++++++++++ JSON +++++++++++++++++++++++++++++++++++++
+
+/*
+same as object but without any variable name.
+*/
+
+{
+  "name":"Ashish",
+  "course":"js programming",
+  "price":"free"
+}
+
+// json in array 
+
+[
+  {},
+  {},
+  {}
+
+]
